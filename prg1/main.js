@@ -1,0 +1,12 @@
+var moment = require("moment");
+var add = require("./operations/add.js");
+var sub = require("./operations/sub.js");
+var mul = require("./operations/mul.js");
+var div = require("./operations/div.js");
+var firstOperand = +process.argv[2];
+var secondOperand = +process.argv[3];
+console.log("Today is: " + moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
+add(firstOperand, secondOperand);
+sub(firstOperand, secondOperand);
+mul(firstOperand, secondOperand);
+div(firstOperand, secondOperand);
